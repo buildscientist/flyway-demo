@@ -20,9 +20,12 @@
             <artifactId>flyway-maven-plugin</artifactId>
             <version>4.0</version>
             <configuration>
-                <url>jdbc:mysql://localhost:3306/sunnybookstore</url>
+                <url>jdbc:mysql://localhost:3306/mysql?useSSL=no</url>
                 <user>flyway</user>
                 <password>flyway</password>
+		<schemas>
+			<schema>sunnybookstore</schema>
+		</schemas>
                 <locations>
                     <location>filesystem:${basedir}</location>      
                 </locations>

@@ -1,7 +1,3 @@
-CREATE DATABASE IF NOT EXISTS sunnybookstore; 
-
-USE sunnybookstore;
-
 CREATE TABLE `books` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `isbn` varchar(256) DEFAULT NULL,
